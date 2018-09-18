@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nastassia Tanyhina">
+  <title>Match-Match Game</title>
+  <link rel="icon" type="image/png" href="../img/christmas-tree-icon.png">
+  <link rel="stylesheet" href="../css/board.css">
+  <script src="../js/script.js"></script>
+  <script src="../js/shuffle.js"></script>
+  <script src="../js/timer.js"></script>
+</head>
+<body onload="startTimer()">
+  <header>
+    <div class="clock">
+      <span class="timer">00:00:00</span>
+    </div>
+    <a class="btn" href="../index.html">Start over</a>
+  </header>	
+
+  <main>
+    <div class="board clearfix"></div>
+  </main>
+
+  <script>
+    let gameArray = [
+      {
+        name: 1,
+        url: 'url(../img/santas/big/santa-01.png) 50% 50% no-repeat'
+      },
+      {
+        name: 1,
+        url: 'url(../img/santas/big/santa-01.png) 50% 50% no-repeat'
+      },
+      {
+        name: 2,
+        url: 'url(../img/santas/big/santa-02.png) 50% 50% no-repeat'
+      },
+      {
+        name: 2,
+        url: 'url(../img/santas/big/santa-02.png) 50% 50% no-repeat'
+      },
+      {
+        name: 3,
+        url: 'url(../img/santas/big/santa-03.png) 50% 50% no-repeat'
+      },
+      {
+        name: 3,
+        url: 'url(../img/santas/big/santa-03.png) 50% 50% no-repeat'
+      },
+      {
+        name: 4,
+        url: 'url(../img/santas/big/santa-04.png) 50% 50% no-repeat'
+      },
+      {
+        name: 4,
+        url: 'url(../img/santas/big/santa-04.png) 50% 50% no-repeat'
+      }
+    ];
+
+    let initGame = new Game('one', gameArray);    
+    initGame.choice();
+    initGame.newBoard();
+  </script>
+</body>
+</html>

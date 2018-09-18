@@ -1,0 +1,80 @@
+html, body, div, span, h1, h2, h3, p, a, img {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  background: url("../img/snowflake.jpg");
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  color: #00008b;
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 90px;
+  background-color: #9999ff;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.board {
+  background: linear-gradient(135deg, rgb(5,171,224) 0%,rgb(83,203,241) 60%,rgb(135,224,253) 100%);
+  border: 2px solid #8080ff;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 15px auto;
+}
+
+.board > div {  
+  box-sizing: border-box;
+  border: 1px solid #00008b;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 0;
+  transition-property: background, opacity;
+  transition-duration: 0.5s, 3s;
+}
+
+.btn {
+  float: right;
+  display: inline-block;
+  width: 110px;
+  padding: 10px;
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ffcc80;
+  border-radius: 5px;
+  color: #00008b;
+  background-color: #ff9900;
+}
+
+.btn:hover {
+  background-color: #ffcc80;
+  border-color: #ff9900;
+}
+
+.btn:active {
+  color: #999;
+  background-color: rgb(5,171,224);
+  border-color: #00008b;
+}
+
+.clock {
+  float: left;
+  width: 150px;
+  font-size: 30px;
+  font-weight: bold;
+}

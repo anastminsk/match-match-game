@@ -1,0 +1,140 @@
+html, body, div, span, h1, h2, h3, p, a, img {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  background: url("../img/snowflake.jpg");
+  font-family: "Calibri", sans-serif;
+  font-size: 25px;
+  color: #00008b;
+}
+
+header {
+  width: 100%;
+  min-height: 90px;
+  background-color: #9999ff;
+}
+
+header h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav.menu {
+  width: 15%;
+  height: auto;
+  float: left;
+  z-index: 1;
+}
+
+.menu ul {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.menu ul li {
+  display: block; 
+  width: 100%; 
+  height: auto; 
+  position: relative;
+}
+      
+.menu ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 10px 15px;
+  background: rgb(5,171,224);
+  border-top: 2px solid #236a92;
+  text-decoration: none;
+}
+
+.menu ul li a p {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px; 
+}
+
+.menu ul li a img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+      
+.menu ul li:first-child > a {
+  border: 0;
+}
+
+.menu ul li a:hover, .menu ul li:hover a {
+  background: #0a3cc1;
+}
+      
+.menu ul li ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  width: auto;
+}
+      
+.menu ul li:hover ul {
+  display: block;
+}
+        
+.menu ul li ul li a {
+  white-space: nowrap;
+  text-transform: none;
+  padding: 5px 20px;
+}
+
+.menu ul li ul li a:hover {
+  background: #87cefa;
+  color: #0a3cc1;
+}
+
+section.description {
+  width: 70%;
+  min-height: 400px;
+  float: left;
+  margin-left: 40px;
+  background: linear-gradient(135deg, rgb(5,171,224) 0%,rgb(83,203,241) 60%,rgb(135,224,253) 100%);
+}
+
+.description h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  text-align: center;
+}
+
+.description img {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin-top: -50px;
+}
